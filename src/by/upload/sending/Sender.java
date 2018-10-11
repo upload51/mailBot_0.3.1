@@ -2,6 +2,7 @@ package by.upload.sending;
 
 import by.upload.parsing.AddressParser;
 import by.upload.parsing.TextParser;
+import by.upload.utils.Constants;
 
 import java.io.IOException;
 import java.util.List;
@@ -12,7 +13,7 @@ public class Sender {
     private TextParser tx = new TextParser();
     private String text;
     private List<String> adr;
-    private String subject = "Anonimous Dvachevskiy";
+    private String subject = Constants.SUBJECT;
 
     public Sender() {
     }

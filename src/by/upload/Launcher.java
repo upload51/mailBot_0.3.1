@@ -1,3 +1,5 @@
+package by.upload;
+
 import by.upload.sending.Sender;
 
 public class Launcher {
