@@ -6,7 +6,7 @@ import java.nio.file.Paths;
 
 public class Utils {
 
-    public static void writeToFile() {
+    public static void writeToFile(String json) {
         String savePath = Constants.SAVEPATH;
         try {
             Files.write(Paths.get(savePath), json.getBytes());
