@@ -1,4 +1,4 @@
-package by.upload.utils;
+package by.upload;
 
 public class Constants {
     public static final String MAILADRES = "C:\\Users\\uploa\\Documents\\recipients.txt";

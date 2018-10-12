@@ -1,6 +1,6 @@
 package by.upload.sending;
 
-import by.upload.utils.Constants;
+import by.upload.Constants;
 import by.upload.utils.Utils;
 
 import java.util.List;
