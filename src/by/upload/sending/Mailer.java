@@ -49,6 +49,6 @@ public class Mailer {
         } catch (MessagingException e) {
             throw new RuntimeException(e);
         }
-        Utils.writeToFile("\n" + toEmail);
+        Utils.writeToFile(toEmail);
     }
 }
