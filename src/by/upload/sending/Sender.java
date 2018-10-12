@@ -6,11 +6,13 @@ import by.upload.utils.Utils;
 import java.util.List;
 
 public class Sender {
-    private Mailer mailer = new Mailer("anon1dvach@gmail.com", "ZAQ!@wsx");
     private Utils utils = new Utils();
     private String text;
     private List<String> adr;
     private String subject = Constants.SUBJECT;
+    private String username = Constants.UN;
+    private String password = Constants.PS;
+    private Mailer mailer = new Mailer(username, password);
 
     public Sender() {
     }
