@@ -38,4 +38,12 @@ public class Utils {
         return adr;
     }
 
+    public static void sleep(int sleepMills){
+        try{
+            Thread.sleep(sleepMills);
+        }catch (InterruptedException e){
+            e.printStackTrace();
+        }
+    }
+
 }

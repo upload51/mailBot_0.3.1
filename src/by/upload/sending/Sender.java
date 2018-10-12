@@ -13,6 +13,7 @@ public class Sender {
     private String username = Constants.UN;
     private String password = Constants.PS;
     private Mailer mailer = new Mailer(username, password);
+    private static final int SleepMills = 10000;
 
     public Sender() {
     }
@@ -30,6 +31,7 @@ public class Sender {
 
         for (String str : adr) {
             if (str != null) {
+                //Utils.sleep(SleepMills);
                 mailer.send(subject, text, str);
             }
         }
