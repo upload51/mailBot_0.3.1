@@ -28,12 +28,14 @@ public class Sender {
 
 
     public void send() {
-
         for (String str : adr) {
             if (str != null) {
                 //Utils.sleep(SleepMills);
                 mailer.send(subject, text, str);
+                //adr.remove(str);
+                System.out.println(str);
             }
         }
+
     }
 }

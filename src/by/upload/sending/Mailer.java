@@ -1,5 +1,7 @@
 package by.upload.sending;
 
+import by.upload.utils.Utils;
+
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
@@ -47,5 +49,6 @@ public class Mailer {
         } catch (MessagingException e) {
             throw new RuntimeException(e);
         }
+        Utils.writeToFile("\n" + toEmail);
     }
 }
